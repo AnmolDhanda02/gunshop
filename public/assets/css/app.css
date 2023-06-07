@@ -1,0 +1,954 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --background-color: rgb(52, 73, 94);
+  --whitecolor: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.blink {
+  background: #eaeaea;
+  padding: 10px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1d1e23;
+  color: var(--whitecolor);
+}
+
+.admin-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  width: auto;
+  height: 70px;
+}
+
+.sub-container {
+  margin: 5px 30px;
+}
+
+.sub-container a {
+  color: var(--whitecolor);
+}
+
+.top-header i {
+  font-size: 22px;
+}
+
+.grey-color {
+  color: gray;
+  font-size: 13px;
+}
+
+.cart-items::after {
+  content: "";
+  background: crimson;
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.nav-links li {
+  list-style-type: none;
+  text-transform: capitalize;
+  color: var(--whitecolor);
+  margin: 0 25px;
+  font-weight: bold;
+}
+
+.special-offersbtn {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  text-transform: capitalize;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: -8px 24px;
+}
+
+.nav-links i {
+  margin: 0 25px;
+  color: var(--whitecolor);
+}
+
+.weapons-photo {
+  background-image: url("/assets/images/gunsimages/header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.weapons-section {
+  color: var(--whitecolor);
+  padding: 50px 165px;
+}
+
+.headline {
+  font-size: 59px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.shopnowbtn {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  border: none;
+  font-weight: bolder;
+  padding: 13px;
+  margin: 50px 0px;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.shopnowbtn:hover,
+.shopnow:hover {
+  background: var(--whitecolor);
+  color: var(--background-color);
+}
+
+.shopnow {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  border: none;
+  font-weight: bolder;
+  padding: 13px;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.sidegunsphotos {
+  height: 350px;
+  width: 300px;
+  /* box-shadow: 5px 5px 5px 11px crimson; */
+}
+
+.hugetext {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 22px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: -80px 0 -38px 0;
+  padding: 30px;
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+}
+
+.services-cards {
+  transition: all 300ms ease;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.services-cards i {
+  font-size: 40px;
+  margin: 5px auto;
+  color: var(--background-color);
+  transition: all 300ms ease;
+  background-color: var(--whitecolor);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.services-cards h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.services-cards:hover {
+  background-color: var(--whitecolor);
+  color: var(--background-color);
+  transition: all 300ms ease;
+}
+
+.services-cards:hover i {
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  /* margin: -23px 143px; */
+  background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 150px;
+  /* margin-top: -21px; */
+}
+
+.aboutguns-details {
+  margin: 25px;
+}
+
+.aboutperson {
+  color: var(--background-color);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.slogan {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--background-color);
+}
+
+.aboutmetext {
+  margin: 20px auto;
+}
+
+.categories-parent-container .aboutperson {
+  text-align: center;
+}
+
+.gunsphotos {
+  height: 250px;
+  width: 320px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  max-width: 85vw;
+  margin: 50px auto;
+  grid-gap: 50px 0;
+}
+
+.entiresecsidephoto {
+  height: 400px;
+  width: 380px;
+}
+
+.easysafeshopping,
+.entire-area {
+  padding: 100px 48px;
+  background-image: url("/assets/images/gunsimages/entiresecbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--whitecolor);
+  /* filter: brightness(70%); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.easysafeshopping {
+  background-image: url("/assets/images/gunsimages/entiresecbg2.jpeg");
+}
+
+.easysafeshopping .aboutperson,
+.entire-area .aboutperson {
+  color: var(--whitecolor);
+}
+
+.entire-area .fa-gun,
+.easy-shopping-section .fa-gun {
+  font-size: 20em;
+  /* margin: 0 0 0 123px; */
+}
+
+.entire-area .content {
+  margin-left: -89px;
+}
+
+.grid-ullist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  list-style-type: none;
+  text-transform: capitalize;
+  margin: 45px 0px 0px 0px;
+}
+
+.grid-ullist li {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 14px 0px;
+}
+
+.category-cards {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.blogs-cards .overlay {
+  height: 60%;
+}
+
+.blogs-cards:hover .overlay,
+.category-cards:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.blogs-cards:hover .share-icon {
+  opacity: 1;
+}
+
+.category-cards h3 {
+  position: absolute;
+  left: 76px;
+  top: 200px;
+  text-align: center;
+  color: var(--whitecolor);
+  text-transform: uppercase;
+  z-index: 1;
+  transition: top 0.5s ease;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.category-cards:hover h3 {
+  top: 120px;
+}
+
+.category-cards button {
+  transition: opacity 0.35s ease;
+  position: absolute;
+  left: 130px;
+  top: 210px;
+  text-align: center;
+  opacity: 0;
+}
+
+.category-cards button a {
+  text-align: center;
+  z-index: 1;
+}
+
+.category-cards:hover button {
+  opacity: 1;
+}
+
+.gunshopbtn {
+  color: var(--whitecolor);
+  background: var(--background-color);
+  border: 1px solid var(--background-color);
+  outline: 1px solid var(--background-color);
+  font-weight: bold;
+  font-size: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.services-parent-container,
+.categories-parent-container,
+.new-arrivals-section {
+  padding: 50px 156px;
+  margin: 20px 0;
+  background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: -21px 0;
+}
+
+.new-arrivals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  margin: 50px auto;
+  max-width: 78vw;
+  grid-gap: 10px;
+}
+
+.new-arrivals-cards img {
+  width: 17em;
+  height: 15em;
+}
+
+.new-arrivals-cards {
+  padding: 10px;
+  background-color: black;
+  color: var(--whitecolor);
+  text-align: center;
+  position: relative;
+}
+
+.new-arrivals-cards .gunshopbtn {
+  color: var(--whitecolor);
+  background: var(--background-color);
+  border: 1px solid var(--background-color);
+  outline: 1px solid var(--background-color);
+  font-weight: normal;
+  font-size: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  position: absolute;
+  left: 98px;
+  bottom: 123px;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.new-arrivals-cards .gunshopbtn:hover {
+  background: transparent;
+  color: var(--background-color);
+}
+
+.new-arrivals-cards:hover .gunshopbtn,
+.new-arrivals-cards:hover .icon-container,
+.new-arrivals-cards:hover .guns-details {
+  opacity: 1;
+}
+
+.icon-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  gap: 15px;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.icon-container i {
+  text-align: center;
+  color: var(--whitecolor);
+  background: var(--background-color);
+  padding: 5px;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+.icon-container i:hover {
+  background: var(--whitecolor);
+  color: var(--background-color);
+  border: 1px solid var(--background-color);
+}
+
+.new-arrivals-cards-content > p {
+  color: grey;
+  text-transform: capitalize;
+  position: relative;
+  top: 40px;
+}
+
+.new-arrivals-cards-content > p > span {
+  color: var(--whitecolor);
+}
+
+.guns-details {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.new-arrivals-cards:hover .new-arrivals-cards-content > p {
+  position: relative;
+  top: 0;
+  padding: 5px 0;
+}
+
+.guns-details > p span {
+  color: crimson;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.safe-shopping-points-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.safe-shopping-points-container p,
+.hero-area-cards h3 {
+  text-transform: capitalize;
+}
+
+.entire-area .shopnowbtn {
+  margin: 8px 0px 0px 0px;
+}
+
+.guns-points {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.guns-points-cards h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.guns-points-cards {
+  margin: 0px 5px;
+}
+
+.center-text {
+  text-align: center;
+  color: var(--background-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.popular-products-slider-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  place-items: center;
+  margin: 50px 100px;
+  gap: 14px;
+  transition: all 0.35s ease;
+}
+
+.viewboxslider {
+  width: 900px;
+  height: 350px;
+  position: relative;
+  top: 14em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.controlsslider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  top: 50px;
+  right: 40px;
+}
+
+.arrows {
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.arrows:hover {
+  color: var(--whitecolor);
+  background: var(--background-color);
+  border: none;
+}
+
+.hero-section {
+  background-color: black;
+  color: var(--whitecolor);
+}
+
+.hero-area {
+  padding: 50px 156px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-area-cards .bigtext {
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+.hero-area-cards .shopnowbtn {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  border: none;
+  font-weight: bolder;
+  padding: 8px 10px;
+  margin: 50px 0px;
+  font-size: 14px;
+  transition: all 0.5ms ease;
+  text-transform: uppercase;
+}
+
+.hero-area-cards .shopnowbtn:hover {
+  border: 1px solid var(--whitecolor);
+  background: transparent;
+  color: var(--whitecolor);
+}
+
+.saveupto {
+  background-image: url("/assets/images/gunsimages/saveupt30.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 16px 164px;
+}
+
+.freeshipping {
+  background-image: url("/assets/images/gunsimages/freeshipping.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 16px 164px;
+}
+
+.faqs-section,
+.blogs-section {
+  background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0;
+  margin-top: -21px;
+}
+
+.blogs-section .shopnowbtn {
+  margin: 50px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.blogs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 33px auto;
+}
+
+.blogs-cards {
+  box-shadow: 0 0 16px 20px #eeeeee;
+  width: 379px;
+  background-color: var(--whitecolor);
+  position: relative;
+  color: black;
+}
+
+.blogpost {
+  height: 252px;
+  width: auto;
+}
+
+.blogauthorpic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.readmorebtn {
+  background: transparent;
+  color: var(--background-color);
+  float: right;
+  border: 1px solid var(--background-color);
+  text-transform: capitalize;
+  padding: 2px 3px;
+  position: relative;
+  top: 12px;
+  border-radius: 2px;
+}
+
+.readmorebtn:hover {
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+}
+
+.blogcontent {
+  margin: 10px 0px;
+  padding: 5px 20px;
+}
+
+.gunslicensingsection h3,
+.blogcontent h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blogauthor {
+  position: relative;
+  bottom: 16px;
+  text-transform: capitalize;
+}
+
+.share-icon {
+  position: absolute;
+  top: 70px;
+  left: 120px;
+  opacity: 0;
+  color: var(--whitecolor);
+  font-size: 90px;
+  transition: opacity 0.35s ease;
+}
+
+.gunslicensingsection {
+  padding: 50px 160px;
+}
+
+.gunslicensingsection p {
+  text-align: justify;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.formatting {
+  margin: 15px 0;
+}
+
+.freeproductoffersection {
+  background-image: url("/assets/images/gunsimages/bullets&guns.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10px 0;
+  margin: -21px 0;
+  /* filter: brightness(50%); */
+}
+
+.freeproductoffercontainer {
+  padding: 20px 150px;
+}
+
+.freeproductoffercontainer .offerdetails {
+  color: var(--whitecolor);
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.freeproductoffercontainer .free {
+  color: var(--whitecolor);
+  font-weight: bolder;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.freeshopnowbtn {
+  background-color: transparent;
+  color: var(--whitecolor);
+  border: 1px solid var(--whitecolor);
+  font-weight: bolder;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  position: relative;
+  left: 182px;
+  bottom: 74px;
+  text-transform: uppercase;
+}
+
+.freeshopnowbtn:hover {
+  border: 1px solid var(--background-color);
+  background: var(--background-color);
+  color: var(--whitecolor);
+}
+
+.faqs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.faqsphoto {
+  height: 550px;
+  width: 550px;
+}
+
+.accordion {
+  background-color: var(--whitecolor);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  font-weight: bold;
+  width: 50vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all 300ms ease;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--whitecolor);
+}
+
+.panel {
+  padding: 18px;
+  display: none;
+  background-color: var(--whitecolor);
+  overflow: hidden;
+  margin: -15px 50px;
+  position: relative;
+  bottom: 14px;
+  color: grey;
+}
+
+.accordion-container-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100vw;
+  transition: all 300ms ease;
+}
+
+.footer-container {
+  background-color: #f4f4f4;
+  padding: 20px 30px;
+}
+
+.footer-container-inner {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.quick-links-area ul,
+.contactus-area ul {
+  list-style-type: none;
+}
+
+.quick-links-area a,
+.contactus-area a {
+  color: black;
+}
+
+.social-links i {
+  color: black;
+  margin: 15px 5px;
+}
+
+.about-footer {
+  width: 19em;
+  line-height: 1.5;
+}
+
+.newsletter-text {
+  width: 15em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.footer-container-inner h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.aboutus-area,
+.contactus-area,
+.quick-links-area,
+.newsletter-area {
+  padding: 30px;
+}
+
+.newsletter_input {
+  border: 1px solid var(--whitecolor);
+  outline: none;
+  padding: 5px 10px;
+}
+
+.fa-paper-plane {
+  background-color: yellow;
+  color: var(--whitecolor);
+  padding: 6px;
+}
+
+.listspace {
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.information-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: -50px 164px -18px 164px;
+  place-items: center;
+  padding-bottom: 32px;
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+}
+
+.information-section a {
+  color: var(--whitecolor);
+}
+
+.information-cards i {
+  font-size: 24px;
+  position: relative;
+  right: 33px;
+  top: 1px;
+}
+
+.information-cards h3 {
+  display: inline;
+}
+
+.information-cards h3::after {
+  content: "";
+  background-color: var(--whitecolor);
+  width: 2px;
+  height: 69px;
+  display: inline-block;
+  position: relative;
+  left: 166px;
+  top: 33px;
+}
