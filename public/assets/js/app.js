@@ -23,3 +23,11 @@ for (iterated = 0; iterated < acc.length; iterated++) {
     }
   });
 }
+
+rightarrow.addEventListener("click", function myfunction() {
+  slidercontainerid.style.transform = "translateX(640px)";
+});
+
+leftarrow.addEventListener("click", function myfunction() {
+  slidercontainerid.style.transform = "translateX(-640px)";
+});
