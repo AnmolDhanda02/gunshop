@@ -1,7 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navlinksul = document.querySelector(".navlinksul");
 const slidercontainerid = document.getElementById("slidercontainerid");
-let controlsslider = document.getElementsByClassName("controlsslider");
 let rightarrow = document.getElementById("right");
 let leftarrow = document.getElementById("left");
 let acc = document.getElementsByClassName("accordion");
@@ -25,9 +24,9 @@ for (iterated = 0; iterated < acc.length; iterated++) {
 }
 
 rightarrow.addEventListener("click", function myfunction() {
-  slidercontainerid.style.transform = "translateX(640px)";
+  slidercontainerid.style.transform = "translateX(629px)";
 });
 
 leftarrow.addEventListener("click", function myfunction() {
-  slidercontainerid.style.transform = "translateX(-640px)";
+  slidercontainerid.style.transform = "translateX(-629px)";
 });

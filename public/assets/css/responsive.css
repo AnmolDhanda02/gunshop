@@ -251,7 +251,7 @@
   }
   .popular-products-slider-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     place-items: center;
     margin: 50px 100px;
     gap: 14px;
@@ -654,7 +654,7 @@
   }
   .popular-products-slider-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     place-items: center;
     margin: 50px 100px;
     gap: 14px;
@@ -1055,7 +1055,7 @@
   }
   .popular-products-slider-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     place-items: center;
     margin: 50px 100px;
     gap: 14px;
