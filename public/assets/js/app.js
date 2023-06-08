@@ -1,8 +1,16 @@
+const hamburger = document.querySelector(".hamburger");
+const navlinksul = document.querySelector(".navlinksul");
+const slidercontainerid = document.getElementById("slidercontainerid");
 let controlsslider = document.getElementsByClassName("controlsslider");
 let rightarrow = document.getElementById("right");
 let leftarrow = document.getElementById("left");
 let acc = document.getElementsByClassName("accordion");
 let iterated;
+
+hamburger.addEventListener("click", function navbaropenclose() {
+  hamburger.classList.toggle("activenavbar");
+  navlinksul.classList.toggle("activenavbar");
+});
 
 for (iterated = 0; iterated < acc.length; iterated++) {
   acc[iterated].addEventListener("click", function myfunction() {

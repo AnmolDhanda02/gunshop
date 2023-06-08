@@ -65,14 +65,14 @@ a {
   border-radius: 50px;
 }
 
-.nav-links {
+.navlinksul {
   display: flex;
   align-content: center;
   justify-content: center;
   padding: 24px 0;
 }
 
-.nav-links li {
+.navlinksul .nav-item {
   list-style-type: none;
   text-transform: capitalize;
   color: var(--whitecolor);
@@ -91,9 +91,23 @@ a {
   margin: -8px 24px;
 }
 
-.nav-links i {
+.navlinksul i {
   margin: 0 25px;
   color: var(--whitecolor);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bars {
+  background-color: var(--whitecolor);
+  height: 31px;
+  width: 4px;
+  margin: 15px 0;
+  display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 .weapons-photo {
@@ -387,7 +401,6 @@ a {
 .categories-parent-container,
 .new-arrivals-section {
   padding: 50px 156px;
-  margin: 20px 0;
   background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -951,4 +964,16 @@ a {
   position: relative;
   left: 166px;
   top: 33px;
+}
+
+.blogpostupdatedcontainer {
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+  position: absolute;
+  top: 0px;
+  width: 64px;
+  height: 50px;
+  padding: 5px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
