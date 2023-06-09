@@ -257,6 +257,18 @@
     gap: 14px;
     transition: all 0.35s ease;
   }
+  .viewboxslider {
+    width: 298px;
+    height: 350px;
+    position: relative;
+    top: 14em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   .hero-section {
     color: var(--whitecolor);
     background-color: transparent;
@@ -638,6 +650,18 @@
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+  }
+  .viewboxslider {
+    width: 398px;
+    height: 350px;
+    position: relative;
+    top: 14em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .aboutperson {
     color: var(--background-color);
@@ -1060,6 +1084,18 @@
     margin: 50px 100px;
     gap: 14px;
     transition: all 0.35s ease;
+  }
+  .viewboxslider {
+    width: 750px;
+    height: 350px;
+    position: relative;
+    top: 14em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .hero-section {
     color: var(--whitecolor);

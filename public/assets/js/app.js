@@ -24,9 +24,9 @@ for (iterated = 0; iterated < acc.length; iterated++) {
 }
 
 rightarrow.addEventListener("click", function myfunction() {
-  slidercontainerid.style.transform = "translateX(629px)";
+  slidercontainerid.style.transform = "translateX(929px)";
 });
 
 leftarrow.addEventListener("click", function myfunction() {
-  slidercontainerid.style.transform = "translateX(-629px)";
+  slidercontainerid.style.transform = "translateX(-929px)";
 });
