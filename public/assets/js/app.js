@@ -3,6 +3,8 @@ const navlinksul = document.querySelector(".navlinksul");
 const slidercontainerid = document.getElementById("slidercontainerid");
 let rightarrow = document.getElementById("right");
 let leftarrow = document.getElementById("left");
+let searchicon = document.getElementById("searchicon");
+let searchfieldiput = document.getElementById("searchfieldiput");
 let acc = document.getElementsByClassName("accordion");
 let iterated;
 
@@ -29,4 +31,13 @@ rightarrow.addEventListener("click", function myfunction() {
 
 leftarrow.addEventListener("click", function myfunction() {
   slidercontainerid.style.transform = "translateX(-929px)";
+});
+
+searchicon.addEventListener("click", function showsearchfield() {
+  searchfieldiput.style.display = "block";
+  searchfieldiput.focus();
+});
+
+searchfieldiput.addEventListener("focusout", function hidesearchfield() {
+  searchfieldiput.style.display = "none";
 });

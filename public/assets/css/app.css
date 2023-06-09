@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: Avenir;
+  /* font-family: "Open Sans", sans-serif; */
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/assets/fonts/AvenirLTStd-Black.woff);
 }
 
 :root {
@@ -91,9 +97,18 @@ a {
   margin: -8px 24px;
 }
 
-.navlinksul i {
+#searchicon {
   margin: 0 25px;
+  cursor: pointer;
   color: var(--whitecolor);
+}
+
+#searchfieldiput {
+  position: absolute;
+  right: 20em;
+  top: 13em;
+  padding: 5px;
+  display: none;
 }
 
 .hamburger {
