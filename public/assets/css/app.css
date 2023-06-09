@@ -142,10 +142,12 @@ a {
   text-transform: uppercase;
 }
 
+.category-cards .gunshopbtn:hover,
 .shopnowbtn:hover,
 .shopnow:hover {
   background: var(--whitecolor);
   color: var(--background-color);
+  border: 1px solid var(--whitecolor);
 }
 
 .shopnow {
@@ -443,7 +445,7 @@ a {
   text-transform: capitalize;
   position: absolute;
   left: 98px;
-  bottom: 123px;
+  bottom: 151px;
   transition: opacity 0.5s ease;
   opacity: 0;
   transition: all 300ms ease;
@@ -494,6 +496,11 @@ a {
   text-transform: capitalize;
   position: relative;
   top: 40px;
+}
+
+.new-arrivals-cards-content .newarrivalsheadline {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .new-arrivals-cards-content > p > span {
@@ -569,7 +576,7 @@ a {
 
 .viewboxslider {
   width: 900px;
-  height: 350px;
+  height: 374px;
   position: relative;
   top: 14em;
   left: 50%;
@@ -642,19 +649,17 @@ a {
 .saveupto {
   background-image: url("/assets/images/gunsimages/saveupt30.jpeg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 16px 164px;
+  width: 40vw;
 }
 
 .freeshipping {
   background-image: url("/assets/images/gunsimages/freeshipping.jpg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 16px 164px;
+  width: 40vw;
 }
 
 .faqs-section,
