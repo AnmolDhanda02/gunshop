@@ -1,15 +1,22 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Avenir;
-  /* font-family: "Open Sans", sans-serif; */
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(/assets/fonts/AvenirLTStd-Black.woff);
+  src: url("/assets/fonts/AvenirLTStd-Light.eot");
+  src: url("/assets/fonts/AvenirLTStd-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/AvenirLTStd-Light.woff2") format("woff2"),
+    url("/assets/fonts/AvenirLTStd-Light.woff") format("woff"),
+    url("/assets/fonts/AvenirLTStd-Light.ttf") format("truetype"),
+    url("/assets/fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -103,7 +110,7 @@ a {
   color: var(--whitecolor);
 }
 
-#searchfieldiput {
+#searchfieldinput {
   position: absolute;
   right: 20em;
   top: 13em;

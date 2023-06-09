@@ -4,7 +4,7 @@ const slidercontainerid = document.getElementById("slidercontainerid");
 let rightarrow = document.getElementById("right");
 let leftarrow = document.getElementById("left");
 let searchicon = document.getElementById("searchicon");
-let searchfieldiput = document.getElementById("searchfieldiput");
+let searchfieldinput = document.getElementById("searchfieldinput");
 let acc = document.getElementsByClassName("accordion");
 let iterated;
 
@@ -34,10 +34,10 @@ leftarrow.addEventListener("click", function myfunction() {
 });
 
 searchicon.addEventListener("click", function showsearchfield() {
-  searchfieldiput.style.display = "block";
-  searchfieldiput.focus();
+  searchfieldinput.style.display = "block";
+  searchfieldinput.focus();
 });
 
-searchfieldiput.addEventListener("focusout", function hidesearchfield() {
-  searchfieldiput.style.display = "none";
+searchfieldinput.addEventListener("focusout", function hidesearchfield() {
+  searchfieldinput.style.display = "none";
 });

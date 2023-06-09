@@ -20,7 +20,7 @@
     width: auto;
     height: 46px;
     position: absolute;
-    top: 284px;
+    top: 270px;
     z-index: 1;
     left: 1em;
   }
@@ -28,7 +28,7 @@
     display: block;
     background-color: #1d1e23;
     position: relative;
-    bottom: 26em;
+    bottom: 25em;
     height: 50px;
   }
   .bars {
@@ -49,6 +49,13 @@
   }
   .hamburger.activenavbar .bars:nth-child(3) {
     transform: rotate(133deg) translate(-8px, 4px);
+  }
+  #searchfieldinput {
+    position: absolute;
+    right: 7em;
+    top: 22em;
+    padding: 5px;
+    display: none;
   }
   .navlinksul {
     position: relative;
@@ -435,7 +442,7 @@
     width: auto;
     height: 46px;
     position: absolute;
-    top: 284px;
+    top: 267px;
     z-index: 1;
     left: 1em;
   }
@@ -443,7 +450,7 @@
     display: block;
     background-color: #1d1e23;
     position: relative;
-    bottom: 26em;
+    bottom: 25em;
     height: 50px;
   }
   .bars {
@@ -464,6 +471,13 @@
   }
   .hamburger.activenavbar .bars:nth-child(3) {
     transform: rotate(133deg) translate(-8px, 4px);
+  }
+  #searchfieldinput {
+    position: absolute;
+    right: 12em;
+    top: 22em;
+    padding: 5px;
+    display: none;
   }
   .navlinksul {
     position: relative;
@@ -879,6 +893,13 @@
   .hamburger.activenavbar .bars:nth-child(3) {
     transform: rotate(133deg) translate(-8px, 4px);
   }
+  #searchfieldinput {
+    position: absolute;
+    right: 23em;
+    top: 22em;
+    padding: 5px;
+    display: none;
+  }
   .navlinksul {
     position: relative;
     right: 62em;
@@ -892,7 +913,7 @@
   }
   .navlinksul.activenavbar {
     position: relative;
-    top: 35px;
+    top: 31px;
     display: flex;
     align-items: center;
     justify-content: center;
