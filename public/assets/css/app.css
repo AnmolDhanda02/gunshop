@@ -39,6 +39,7 @@ a {
   justify-content: space-around;
   background: #1d1e23;
   color: var(--whitecolor);
+  padding: 10px 0;
 }
 
 .admin-details {
@@ -93,6 +94,82 @@ a {
   font-weight: bold;
 }
 
+.nav-item a,
+.breadcrumb a {
+  color: var(--whitecolor);
+}
+
+.outer-lefttop-tabborder,
+.inner-rightbottom-tabborder {
+  position: relative;
+  margin: 30px 0px;
+}
+
+.linetext {
+  text-transform: capitalize;
+}
+
+.linetext::before {
+  content: "";
+  background-color: var(--background-color);
+  color: var(--background-color);
+  height: 1px;
+  width: 60px;
+  display: inline-block;
+  position: relative;
+  right: 8px;
+  bottom: 5px;
+}
+
+.inner-rightbottom-tabborder::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-width: 2px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  left: -7px;
+  bottom: -8px;
+  transform: rotate(89deg);
+}
+
+.inner-rightbottom-tabborder::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-width: 2px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  top: 20px;
+  right: -7px;
+}
+
+.outer-lefttop-tabborder::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 0px;
+  right: -6px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-width: 2px;
+}
+
+.outer-lefttop-tabborder::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 0;
+  left: -6px;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-width: 2px;
+}
+
 .special-offersbtn {
   background: var(--background-color);
   color: var(--whitecolor);
@@ -130,6 +207,16 @@ a {
   margin: 15px 0;
   display: block;
   transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb {
+  list-style-type: none;
+  text-transform: capitalize !important;
+  font-weight: bold;
+}
+
+.breadcrumb li {
+  display: inline;
 }
 
 .weapons-photo {
@@ -586,6 +673,9 @@ a {
   font-weight: bold;
 }
 
+.weapons-section .center-text {
+  color: var(--whitecolor);
+}
 .popular-products-slider-container {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -633,12 +723,12 @@ a {
 }
 
 .hero-section {
-  background-color: black;
+  background-color: #1d1e23;
   color: var(--whitecolor);
 }
 
 .hero-area {
-  padding: 50px 156px;
+  padding: 15px 0;
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -650,22 +740,22 @@ a {
   font-size: 45px;
 }
 
-.hero-area-cards .shopnowbtn {
-  background: var(--background-color);
-  color: var(--whitecolor);
-  border: none;
-  font-weight: bolder;
-  padding: 8px 10px;
-  margin: 50px 0px;
-  font-size: 14px;
-  transition: all 0.5ms ease;
-  text-transform: uppercase;
-}
-
-.hero-area-cards .shopnowbtn:hover {
-  border: 1px solid var(--whitecolor);
+.hero-section .shopnowbtn {
   background: transparent;
   color: var(--whitecolor);
+  border: 1px solid var(--whitecolor);
+  font-weight: bolder;
+  padding: 13px;
+  margin: 50px 0px;
+  font-size: 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5ms ease;
+}
+
+.hero-section .shopnowbtn:hover {
+  background: var(--background-color);
+  border: none;
 }
 
 .saveupto {
@@ -674,6 +764,29 @@ a {
   background-repeat: no-repeat;
   padding: 16px 164px;
   width: 40vw;
+}
+
+.gunsbrandslogos {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+.gunsbrandscontainer {
+  background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: -18px 0 0px 0;
+}
+
+.gunsbrandscards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-items: center;
+  padding: 20px 210px;
 }
 
 .freeshipping {
@@ -757,6 +870,11 @@ a {
   font-weight: bold;
 }
 
+.gunslicensingsection h2 {
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
 .blogauthor {
   position: relative;
   bottom: 16px;
@@ -947,7 +1065,7 @@ a {
 }
 
 .fa-paper-plane {
-  background-color: yellow;
+  background-color: var(--background-color);
   color: var(--whitecolor);
   padding: 6px;
 }
@@ -1003,4 +1121,66 @@ a {
   padding: 5px 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.featuredproductscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 30px;
+  place-items: center;
+  background-color: #1d1e23;
+  padding: 45px 107px;
+}
+
+.featuredproductscontainer h2,
+.featuredproductscontainer .amount {
+  color: var(--whitecolor);
+}
+
+.featuredproductscontainer p {
+  color: grey;
+}
+
+.cardsbody {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
+}
+
+.featuredphotos {
+  height: 50px;
+  width: 50px;
+}
+
+.latestproductscards {
+  padding: 10px 10px 50px 10px;
+}
+
+.latestproductscards h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.ratings i {
+  color: gold;
+}
+
+.ratings .checkedicon {
+  color: #8f6122;
+}
+
+.ratings {
+  position: relative;
+  left: 53px;
+  display: inline;
+}
+
+.featuredproductscontainer .amount {
+  display: inline;
+  position: relative;
+  left: -53px;
+  top: 27px;
 }

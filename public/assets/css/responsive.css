@@ -231,8 +231,8 @@
   }
   .new-arrivals-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
   }
@@ -418,6 +418,40 @@
     left: 183px;
     bottom: 29px;
   } */
+  .gunsbrandscards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .featuredproductscontainer {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+  .cardsbody {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 10px;
+  }
+  .specification {
+    width: 100vw;
+    padding: 5px 15px;
+  }
+  .latestproductscards h2 {
+    text-align: center;
+  }
+  .featuredphotos {
+    height: 10em;
+    width: 10em;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -840,6 +874,40 @@
     left: 183px;
     bottom: 29px;
   } */
+  .gunsbrandscards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    padding: 10px 0;
+  }
+  .featuredproductscontainer {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+  .cardsbody {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 10px;
+  }
+  .specification {
+    width: 100vw;
+    padding: 5px 15px;
+  }
+  .latestproductscards h2 {
+    text-align: center;
+  }
+  .featuredphotos {
+    height: 10em;
+    width: 10em;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -1267,5 +1335,39 @@
     color: var(--whitecolor);
     font-size: 90px;
     transition: opacity 0.35s ease;
+  }
+  .gunsbrandscards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    padding: 10px 0;
+  }
+  .featuredproductscontainer {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+  .cardsbody {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 10px;
+  }
+  .specification {
+    width: 100vw;
+    padding: 5px 15px;
+  }
+  .latestproductscards h2 {
+    text-align: center;
+  }
+  .featuredphotos {
+    height: 10em;
+    width: 10em;
   }
 }

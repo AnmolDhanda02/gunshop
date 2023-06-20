@@ -1,426 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gun Ammo Shop</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gun Ammo Shop</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-</head>
-
-<body>
-  <marquee class="blink">
-    <span>5% off Our first-time valued customer's orders, use coupon code rxvaluedcustomer! | 5% off Our first-time valued customer's orders, use coupon code rxvaluedcustomer! | 5% off Our first-time valued customer's orders, use coupon code rxvaluedcustomer!</span>
-  </marquee>
-  <div class="top-header">
-    <img src="assets/images/logo.png" class="header-logo" alt="logo">
-    <div class="admin-details">
-      <div class="sub-container">
-        <i class="fas fa-shipping-fast"></i> <span class="shipping">Free Shipping!</span>
-        <p class="grey-color">on order above $100</p>
+  <body>
+    <marquee class="blink">
+      <span
+        >5% off Our first-time valued customer's orders, use coupon code
+        rxvaluedcustomer! | 5% off Our first-time valued customer's orders, use
+        coupon code rxvaluedcustomer! | 5% off Our first-time valued customer's
+        orders, use coupon code rxvaluedcustomer!</span
+      >
+    </marquee>
+    <div class="top-header">
+      <img src="assets/images/logo.png" class="header-logo" alt="logo" />
+      <div class="admin-details">
+        <div class="sub-container">
+          <i class="fas fa-shipping-fast"></i>
+          <span class="shipping">Free Shipping!</span>
+          <p class="grey-color">on order above $100</p>
+        </div>
+        <div class="sub-container">
+          <i class="fa-solid fa-phone"></i>
+          <span><a href="tel:8032803282">(064) 332-123</a></span>
+          <h4>
+            <a href="mailto:admin@gmail.com" class="grey-color"
+              >admin@gmail.com</a
+            >
+          </h4>
+        </div>
+        <div class="sub-container">
+          <i class="fas fa-shopping-cart cart-items"></i>
+          <span class="cart">Your Cart</span>
+          <p class="grey-color">2 items - $231.00</p>
+        </div>
+        <i class="fas fa-user-circle"></i>
       </div>
-      <div class="sub-container">
-        <i class="fa-solid fa-phone"></i> <span><a href="tel:8032803282">(064) 332-123</a></span>
-        <h4><a href="mailto:admin@gmail.com" class="grey-color">admin@gmail.com</a></h4>
-      </div>
-      <div class="sub-container">
-        <i class="fas fa-shopping-cart cart-items"></i> <span class="cart">Your Cart</span>
-        <p class="grey-color">2 items - $231.00</p>
-      </div>
-      <i class="fas fa-user-circle"></i>
     </div>
-  </div>
-  <section class="weapons-photo">
-    <nav class="navigation-bar">
-      <ul class="navlinksul">
-        <a href="#">
-          <li class="nav-item">home</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">handguns</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">rifles</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">shotguns</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">ammunition</li>
-          <a href="#">
-            <li class="nav-item">magazines</li>
-          </a>
-          <a href="#">
-            <li class="nav-item">silencers</li>
-          </a>
-          <a href="#">
-            <li class="nav-item">lower receivers</li>
-          </a>
+    <section class="weapons-photo">
+      <nav class="navigation-bar">
+        <ul class="navlinksul">
+          <li class="nav-item outer-lefttop-tabborder outer-rightbottom-tabborder">
+          <a href="#"class="inner-lefttop-tabborder inner-rightbottom-tabborder">home</a></li>
+          <li class="nav-item"><a href="#">handguns</a></li>
+          <li class="nav-item"><a href="#">rifles</a></li>
+          <li class="nav-item"><a href="#">shotguns</a></li>
+          <li class="nav-item"><a href="#">ammunition</a></li>
+          <li class="nav-item"><a href="#">magazines</a></li>
+          <li class="nav-item"><a href="#">silencers</a></li>
+          <li class="nav-item"><a href="#">lower receivers</a></li>
           <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
           <button class="special-offersbtn">special offers</button>
           <form action="#" method="get">
-            <input type="search" placeholder="Search here!" id="searchfieldinput">
+            <input
+              type="search"
+              placeholder="Search here!"
+              id="searchfieldinput"
+            />
           </form>
-      </ul>
-      <div class="hamburger">
-        <span class="bars"></span>
-        <span class="bars"></span>
-        <span class="bars"></span>
-      </div>
-    </nav>
-    <!-- hero section starts -->
-    <section class="weapons-section">
-      <h1 class="headline">best</h1>
-      <h1 class="headline">quality shotguns</h1>
-      <p class="hugetext">unlock parallel firepower:</p>
-      <p>discover the finest shotguns for uncompromising marksmen</p>
-      <button class="shopnowbtn">shop now</button>
+        </ul>
+        <div class="hamburger">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </div>
+      </nav>
+      <!-- hero section starts -->
+      <section class="weapons-section">
+        <h1 class="headline">best</h1>
+        <h1 class="headline">quality shotguns</h1>
+        <p class="hugetext">unlock parallel firepower:</p>
+        <p>discover the finest shotguns for uncompromising marksmen</p>
+        <button class="shopnowbtn">shop now</button>
+      </section>
+      <!-- hero section ends -->
     </section>
-    <!-- hero section ends -->
-  </section>
 
-  <!-- services section starts -->
-  <section class="services-parent-container">
-    <div class="services-container">
-      <div class="services-cards">
-        <i class="fas fa-shipping-fast"></i>
-        <h3>free shipping</h3>
-        <p>Gun Ammo Shop offers Above $200 free shipping on all firearms</p>
+    <!-- services section starts -->
+    <section class="services-parent-container">
+      <div class="services-container">
+        <div class="services-cards">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>free shipping</h3>
+          <p>Gun Ammo Shop offers Above $200 free shipping on all firearms</p>
+        </div>
+        <div class="services-cards">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>invest payments</h3>
+          <p>
+            With our secure and fast payments you finish shopping in no time.
+          </p>
+        </div>
+        <div class="services-cards">
+          <i class="fas fa-exchange"></i>
+          <h3>exchange and return</h3>
+          <p>Gun Ammo Shop offers 30 Days Return for all firearms.</p>
+        </div>
+        <div class="services-cards">
+          <i class="fas fa-headset"></i>
+          <h3>customer support</h3>
+          <p>
+            We are available 24/7 for all your enquiries just call or send us a
+            mail.
+          </p>
+        </div>
       </div>
-      <div class="services-cards">
-        <i class="fa-solid fa-credit-card"></i>
-        <h3>invest payments</h3>
-        <p>With our secure and fast payments you finish shopping in no time.</p>
+    </section>
+    <!-- services section ends -->
+
+    <!-- about section starts -->
+    <section class="about-section">
+      <img
+        src="assets/images/gunsimages/about.jpg"
+        alt="theuser"
+        class="sidegunsphotos"
+      />
+      <div class="aboutguns-details">
+        <h2 class="aboutperson">about</h2>
+        <h4 class="slogan">gun ammo shop</h4>
+        <p class="aboutmetext">
+          Welcome to Ammo Gun Shop, the nation’s top gun store online. With our
+          unbeatable quality guns, friendly customer service, and we make it our
+          purpose to provide you the best firearms, accessories, and guns for
+          sale.
+        </p>
+        <button class="shopnow">shop now</button>
       </div>
-      <div class="services-cards">
-        <i class="fas fa-exchange"></i>
-        <h3>exchange and return</h3>
-        <p>Gun Ammo Shop offers 30 Days Return for all firearms.</p>
-      </div>
-      <div class="services-cards">
-        <i class="fas fa-headset"></i>
-        <h3>customer support</h3>
-        <p>We are available 24/7 for all your enquiries just call or send us a mail.</p>
+    </section>
+    <!-- about section ends -->
+
+    <!-- categories section starts -->
+    <div class="categories-parent-container">
+      <h2 class="aboutperson">our categories</h2>
+      <div class="categories-container">
+        <div class="category-cards">
+          <img
+            src="assets/images/shotguns.jpg"
+            class="gunsphotos"
+            alt="shotguns"
+          />
+          <h3>shotguns</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
+        <div class="category-cards">
+          <img
+            src="assets/images/handguns.jpg"
+            class="gunsphotos"
+            alt="handguns"
+          />
+          <h3>handguns</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
+        <div class="category-cards">
+          <img
+            src="assets/images/riflearms.png"
+            class="gunsphotos"
+            alt="riflearms"
+          />
+          <h3>rifle arms</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
+        <div class="category-cards">
+          <img
+            src="assets/images/ammunition.jpg"
+            class="gunsphotos"
+            alt="ammunition"
+          />
+          <h3>ammunition</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
+        <div class="category-cards">
+          <img
+            src="assets/images/magazines.jpg"
+            class="gunsphotos"
+            alt="magazines"
+          />
+          <h3>magazines</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
+        <div class="category-cards">
+          <img
+            src="assets/images/silencers.jpg"
+            class="gunsphotos"
+            alt="silencers"
+          />
+          <h3>silencers</h3>
+          <div class="overlay"></div>
+          <button><a href="#" class="gunshopbtn">shop now</a></button>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- services section ends -->
+    <!-- categories section ends -->
 
-  <!-- about section starts -->
-  <section class="about-section">
-    <img src="assets/images/gunsimages/about.jpg" alt="theuser" class="sidegunsphotos">
-    <div class="aboutguns-details">
-      <h2 class="aboutperson">about</h2>
-      <h4 class="slogan">gun ammo shop</h4>
-      <p class="aboutmetext">Welcome to Ammo Gun Shop, the nation’s top gun store online. With our unbeatable quality guns, friendly customer service, and we make it our purpose to provide you the best firearms, accessories, and guns for sale.</p>
-      <button class="shopnow">shop now</button>
-    </div>
-  </section>
-  <!-- about section ends -->
+    <!-- ammo guns shop section starts -->
+    <section class="entire-area">
+      <img
+        src="assets/images/gunsimages/goldpistol.jpg"
+        alt="gold pistol"
+        class="entiresecsidephoto"
+      />
+      <div class="content">
+        <h3 class="aboutperson">welcome to</h3>
+        <h3 class="aboutperson">ammu gun shop</h3>
+        <p>
+          Gun Ammo Shop is one of the largest online gun stores with the
+          selection of handguns, rifles, shotguns, ammo, optics & firearm
+          accessories available at your disposal.
+        </p>
+        <ul class="grid-ullist">
+          <li><i class="fa-solid fa-check"></i> 100% Safe Shopping</li>
+          <li><i class="fa-solid fa-check"></i> Easy Returns</li>
+          <li><i class="fa-solid fa-check"></i> Authorized Dealer</li>
+          <li><i class="fa-solid fa-check"></i> Free Shipping</li>
+          <li><i class="fa-solid fa-check"></i> Secured Payments</li>
+          <li><i class="fa-solid fa-check"></i> Easy Purchase</li>
+        </ul>
+      </div>
+    </section>
+    <!-- ammo guns shop section ends -->
 
-  <!-- categories section starts -->
-  <div class="categories-parent-container">
-    <h2 class="aboutperson">our categories</h2>
-    <div class="categories-container">
-      <div class="category-cards">
-        <img src="assets/images/shotguns.jpg" class="gunsphotos" alt="shotguns">
-        <h3>shotguns</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-      <div class="category-cards">
-        <img src="assets/images/handguns.jpg" class="gunsphotos" alt="handguns">
-        <h3>handguns</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-      <div class="category-cards">
-        <img src="assets/images/riflearms.png" class="gunsphotos" alt="riflearms">
-        <h3>rifle arms</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-      <div class="category-cards">
-        <img src="assets/images/ammunition.jpg" class="gunsphotos" alt="ammunition">
-        <h3>ammunition</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-      <div class="category-cards">
-        <img src="assets/images/magazines.jpg" class="gunsphotos" alt="magazines">
-        <h3>magazines</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-      <div class="category-cards">
-        <img src="assets/images/silencers.jpg" class="gunsphotos" alt="silencers">
-        <h3>silencers</h3>
-        <div class="overlay"></div>
-        <button><a href="#" class="gunshopbtn">shop now</a></button>
-      </div>
-    </div>
-  </div>
-  <!-- categories section ends -->
-
-  <!-- ammo guns shop section starts -->
-  <section class="entire-area">
-    <img src="assets/images/gunsimages/goldpistol.jpg" alt="gold pistol" class="entiresecsidephoto">
-    <div class="content">
-      <h3 class="aboutperson">welcome to</h3>
-      <h3 class="aboutperson">ammu gun shop</h3>
-      <p>Gun Ammo Shop is one of the largest online gun stores with the selection of handguns, rifles, shotguns, ammo, optics & firearm accessories available at your disposal.</p>
-      <ul class="grid-ullist">
-        <li><i class="fa-solid fa-check"></i> 100% Safe Shopping</li>
-        <li><i class="fa-solid fa-check"></i> Easy Returns</li>
-        <li><i class="fa-solid fa-check"></i> Authorized Dealer</li>
-        <li><i class="fa-solid fa-check"></i> Free Shipping</li>
-        <li><i class="fa-solid fa-check"></i> Secured Payments</li>
-        <li><i class="fa-solid fa-check"></i> Easy Purchase</li>
-      </ul>
-    </div>
-  </section>
-  <!-- ammo guns shop section ends -->
-
-  <!-- new arrivals section starts -->
-  <section class="new-arrivals-section">
-    <h2 class="aboutperson">new arrivals</h2>
-    <h4 class="slogan">get the best at ammo gun shop</h4>
+    <!-- new arrivals section starts -->
+    <section class="new-arrivals-section">
+      <h2 class="aboutperson">new arrivals</h2>
+      <h4 class="slogan">get the best at ammo gun shop</h4>
       <div class="new-arrivals-container">
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
         <div class="new-arrivals-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            alt="dangerguns"
+          />
           <div class="new-arrivals-cards-content">
-            <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-          <p>price: <span>$1,713.63</span></p>
-          <div class="guns-details">
-            <p>This Product <span>Ships Free!</span></p>
-            <p>Standard Flat Rate Shipping</p>
+            <h3 class="newarrivalsheadline">
+              ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+            </h3>
+            <p>price: <span>$1,713.63</span></p>
+            <div class="guns-details">
+              <p>This Product <span>Ships Free!</span></p>
+              <p>Standard Flat Rate Shipping</p>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-arrows"></i>
+              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
-          <div class="icon-container">
-            <i class="fas fa-arrows"></i>
-            <i class="fa-solid fa-filter"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          </div>
-          <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+          <button class="gunshopbtn">
+            <i class="fas fa-shopping-cart"></i> add to cart
+          </button>
         </div>
       </div>
-  </section>
-  <!-- new arrivals section ends -->
+    </section>
+    <!-- new arrivals section ends -->
 
     <!-- easy and safe shopping section starts -->
     <section class="easysafeshopping">
-      <img src="assets/images/gunsimages/variousguns.jpg" alt="various guns" class="entiresecsidephoto">
+      <img
+        src="assets/images/gunsimages/variousguns.jpg"
+        alt="various guns"
+        class="entiresecsidephoto"
+      />
       <div class="content">
         <h3 class="aboutperson">easy and safe shopping</h3>
         <h3 class="aboutperson">we've got you covered</h3>
-        <p>At Ammo Gun Shop, we’re passionate about two things – our customers and our freedom. We are committed to providing excellent service.</p>
-          <div class="guns-points">
-            <div class="guns-points-cards">
-              <h2>6+</h2>
-              <h4>Years of Experience</h4>
-              <p>You Need Assistance Making A Purchase?
-                We Are Here 24/7 For You.</p>
-            </div>
-            <div class="guns-points-cards">
-              <h2>2324+</h2>
-              <h4>Satisfied Clients</h4>
-              <p>And counting. Fast & secured shopping only at gunammoshop.com</p>
-            </div>
+        <p>
+          At Ammo Gun Shop, we’re passionate about two things – our customers
+          and our freedom. We are committed to providing excellent service.
+        </p>
+        <div class="guns-points">
+          <div class="guns-points-cards">
+            <h2>6+</h2>
+            <h4>Years of Experience</h4>
+            <p>
+              You Need Assistance Making A Purchase? We Are Here 24/7 For You.
+            </p>
           </div>
-          <button class="shopnowbtn">shop now</button>
+          <div class="guns-points-cards">
+            <h2>2324+</h2>
+            <h4>Satisfied Clients</h4>
+            <p>And counting. Fast & secured shopping only at gunammoshop.com</p>
+          </div>
+        </div>
+        <button class="shopnowbtn">shop now</button>
       </div>
     </section>
     <!-- easy and safe shopping section ends -->
@@ -431,157 +574,220 @@
       <div class="viewboxslider">
         <div class="popular-products-slider-container" id="slidercontainerid">
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
           <div class="new-arrivals-cards">
-            <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" alt="dangerguns">
+            <img
+              src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+              alt="dangerguns"
+            />
             <div class="new-arrivals-cards-content">
-              <h3 class="newarrivalsheadline">ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF</h3>
-            <p>price: <span>$1,713.63</span></p>
-            <div class="guns-details">
-              <p>This Product <span>Ships Free!</span></p>
-              <p>Standard Flat Rate Shipping</p>
+              <h3 class="newarrivalsheadline">
+                ADAMS ARMS TACTICAL EVO SBR 223REM 11.5 SAMSON FF
+              </h3>
+              <p>price: <span>$1,713.63</span></p>
+              <div class="guns-details">
+                <p>This Product <span>Ships Free!</span></p>
+                <p>Standard Flat Rate Shipping</p>
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-arrows"></i>
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
             </div>
-            <div class="icon-container">
-              <i class="fas fa-arrows"></i>
-              <i class="fa-solid fa-filter"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-            <button class="gunshopbtn"><i class="fas fa-shopping-cart"></i> add to cart</button>
+            <button class="gunshopbtn">
+              <i class="fas fa-shopping-cart"></i> add to cart
+            </button>
           </div>
         </div>
       </div>
@@ -589,7 +795,7 @@
         <i class="fa-solid fa-arrow-right arrows" id="right"></i>
         <i class="fa-solid fa-arrow-left arrows" id="left"></i>
       </div>
-    </section>  
+    </section>
     <!-- popular products slider ends -->
 
     <!-- hero section starts -->
@@ -615,48 +821,75 @@
       <p class="center-text">you can find your latest blogs here</p>
       <div class="blogs-container">
         <div class="blogs-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" class="blogpost" alt="blogpostphoto">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            class="blogpost"
+            alt="blogpostphoto"
+          />
           <div class="overlay"></div>
           <i class="fa fa-link share-icon" aria-hidden="true"></i>
           <div class="blogcontent">
-            <h3>instruction and training tips for beginners</h3><br>
+            <h3>instruction and training tips for beginners</h3>
+            <br />
             <div class="blogpostupdatedcontainer">
               <div class="blogposteddate">7</div>
               <div class="blogposteddate">JUNE</div>
             </div>
-            <img src="assets/images/gunsimages/bloguser.jpeg" class="blogauthorpic" alt="userpic">
-          <span class="blogauthor">random user</span>
-          <button class="readmorebtn">read more</button>
+            <img
+              src="assets/images/gunsimages/bloguser.jpeg"
+              class="blogauthorpic"
+              alt="userpic"
+            />
+            <span class="blogauthor">random user</span>
+            <button class="readmorebtn">read more</button>
           </div>
         </div>
         <div class="blogs-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" class="blogpost" alt="blogpostphoto">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            class="blogpost"
+            alt="blogpostphoto"
+          />
           <div class="overlay"></div>
           <i class="fa fa-link share-icon" aria-hidden="true"></i>
           <div class="blogcontent">
-            <h3>instruction and training tips for beginners</h3><br>
+            <h3>instruction and training tips for beginners</h3>
+            <br />
             <div class="blogpostupdatedcontainer">
               <div class="blogposteddate">7</div>
               <div class="blogposteddate">JUNE</div>
             </div>
-          <img src="assets/images/gunsimages/bloguser.jpeg" class="blogauthorpic" alt="userpic">
-          <span class="blogauthor">random user</span>
-          <button class="readmorebtn">read more</button>
+            <img
+              src="assets/images/gunsimages/bloguser.jpeg"
+              class="blogauthorpic"
+              alt="userpic"
+            />
+            <span class="blogauthor">random user</span>
+            <button class="readmorebtn">read more</button>
           </div>
         </div>
         <div class="blogs-cards">
-          <img src="assets/images/gunsimages/newarrivalscardsphotos.jpg" class="blogpost" alt="blogpostphoto">
+          <img
+            src="assets/images/gunsimages/newarrivalscardsphotos.jpg"
+            class="blogpost"
+            alt="blogpostphoto"
+          />
           <div class="overlay"></div>
           <i class="fa fa-link share-icon" aria-hidden="true"></i>
           <div class="blogcontent">
-            <h3>instruction and training tips for beginners</h3><br>
+            <h3>instruction and training tips for beginners</h3>
+            <br />
             <div class="blogpostupdatedcontainer">
               <div class="blogposteddate">7</div>
               <div class="blogposteddate">JUNE</div>
             </div>
-          <img src="assets/images/gunsimages/bloguser.jpeg" class="blogauthorpic" alt="userpic">
-          <span class="blogauthor">random user</span>
-          <button class="readmorebtn">read more</button>
+            <img
+              src="assets/images/gunsimages/bloguser.jpeg"
+              class="blogauthorpic"
+              alt="userpic"
+            />
+            <span class="blogauthor">random user</span>
+            <button class="readmorebtn">read more</button>
           </div>
         </div>
       </div>
@@ -668,17 +901,44 @@
     <section class="gunslicensingsection">
       <div class="gunslicensingcontainer">
         <h3>guns and ammo</h3>
-        <p>Welcome to our guns and ammo shop! We are your go-to destination for all things firearms, offering a wide variety of guns and ammunition from the industry’s top manufacturers. Our knowledgeable staff is passionate about firearms and is dedicated to helping you find the perfect gun or ammo for your needs, whether you’re a seasoned shooter or just getting started. We offer a welcoming and inclusive environment for all gun enthusiasts and strive to provide excellent customer service. Our selection of firearms includes everything from pistols and shotguns to rifles and machine guns, with ammo to match. We also offer a variety of accessories and gunsmithing services to keep your firearms in top condition. Stop by our shop today to experience our friendly and professional service and find the perfect firearms and ammunition to fit your needs.</p>
+        <p>
+          Welcome to our guns and ammo shop! We are your go-to destination for
+          all things firearms, offering a wide variety of guns and ammunition
+          from the industry’s top manufacturers. Our knowledgeable staff is
+          passionate about firearms and is dedicated to helping you find the
+          perfect gun or ammo for your needs, whether you’re a seasoned shooter
+          or just getting started. We offer a welcoming and inclusive
+          environment for all gun enthusiasts and strive to provide excellent
+          customer service. Our selection of firearms includes everything from
+          pistols and shotguns to rifles and machine guns, with ammo to match.
+          We also offer a variety of accessories and gunsmithing services to
+          keep your firearms in top condition. Stop by our shop today to
+          experience our friendly and professional service and find the perfect
+          firearms and ammunition to fit your needs.
+        </p>
         <h3>handguns</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis minima aut laborum, architecto illo placeat veritatis aspernatur modi similique aperiam sunt velit pariatur, accusantium, a at illum optio totam. Earum numquam quisquam animi perferendis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloremque dolor nobis saepe, aperiam aliquid.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis
+          minima aut laborum, architecto illo placeat veritatis aspernatur modi
+          similique aperiam sunt velit pariatur, accusantium, a at illum optio
+          totam. Earum numquam quisquam animi perferendis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          doloremque dolor nobis saepe, aperiam aliquid.
+        </p>
         <h3 class="formatting">revolvers</h3>
         <h3 class="formatting">derringers</h3>
         <h3 class="formatting">ar/ak pistols</h3>
         <h3 class="formatting">lever action hand guns</h3>
         <h3 class="formatting">semi automatic hand guns</h3>
         <h3 class="formatting">tactical hand guns</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi reprehenderit a eum, accusantium iusto quidem voluptatibus maiores laudantium modi sapiente totam nobis? Vel ex libero iste error odit laboriosam natus. Maxime tenetur corrupti provident pariatur?</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+          reprehenderit a eum, accusantium iusto quidem voluptatibus maiores
+          laudantium modi sapiente totam nobis? Vel ex libero iste error odit
+          laboriosam natus. Maxime tenetur corrupti provident pariatur?
+        </p>
       </div>
     </section>
     <!-- guns licensing procedure section ends -->
@@ -694,130 +954,210 @@
     </section>
     <!-- one on one free product section ends -->
 
-        <!-- guns details section starts -->
-        <section class="gunslicensingsection">
-          <div class="gunslicensingcontainer">
-            <h3>rifles</h3>
-            <p>A rifle is a type of firearm, it’s designed for accurate shooting with a long Barrell and a helical pattern cut into the bore wall. Above all, in order to maintain accuracy, it is designed to be held firmly in the shooter’s both hands against the shoulder for stability while shooting. Therefore, it becomes easy to take a precise shot, however, to take precision to next level to the far target, we recommend using scopes. In addition to long-range firearms selection, Guns And Ammo Shop offers famous types of:</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in ea provident veniam voluptas recusandae temporibus esse illo quam?</p>
-            <h3 class="formatting">aks</h3>
-            <h3 class="formatting">ars</h3>
-            <h3 class="formatting">bolt action rifles</h3>
-            <h3 class="formatting">lever action rifles</h3>
-            <h3 class="formatting">hunting rifles</h3>
-            <h3 class="formatting">precision tactical rifles</h3>
-            <h3 class="formatting">tactical rifles</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis minima aut laborum, architecto illo placeat veritatis aspernatur modi similique aperiam sunt velit pariatur, accusantium, a at illum optio totam.</p>
-            <h3 class="formatting">shotguns</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore pariatur, ab quaerat alias repellendus delectus excepturi voluptate odio asperiores aspernatur minus commodi nisi, incidunt maiores?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos ipsum est voluptates minus mollitia!</p>
-            <h3 class="formatting">bolt action</h3>
-            <h3 class="formatting">pump action</h3>
-            <h3 class="formatting">self defense</h3>
-            <h3 class="formatting">over & under</h3>
-            <h3 class="formatting">semi-auto</h3>
-            <h3 class="formatting">sporting</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ab quibusdam! Sit alias sequi error labore ullam numquam officia dolores explicabo itaque mollitia iste, veniam provident perspiciatis quaerat earum at soluta assumenda aspernatur facilis aliquam. Cumque reprehenderit omnis commodi possimus, iure dolorem magni assumenda soluta.</p>
-          </div>
-        </section>
-        <!-- guns details section ends -->
+    <!-- guns details section starts -->
+    <section class="gunslicensingsection">
+      <div class="gunslicensingcontainer">
+        <h3>rifles</h3>
+        <p>
+          A rifle is a type of firearm, it’s designed for accurate shooting with
+          a long Barrell and a helical pattern cut into the bore wall. Above
+          all, in order to maintain accuracy, it is designed to be held firmly
+          in the shooter’s both hands against the shoulder for stability while
+          shooting. Therefore, it becomes easy to take a precise shot, however,
+          to take precision to next level to the far target, we recommend using
+          scopes. In addition to long-range firearms selection, Guns And Ammo
+          Shop offers famous types of:
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in ea
+          provident veniam voluptas recusandae temporibus esse illo quam?
+        </p>
+        <h3 class="formatting">aks</h3>
+        <h3 class="formatting">ars</h3>
+        <h3 class="formatting">bolt action rifles</h3>
+        <h3 class="formatting">lever action rifles</h3>
+        <h3 class="formatting">hunting rifles</h3>
+        <h3 class="formatting">precision tactical rifles</h3>
+        <h3 class="formatting">tactical rifles</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis
+          minima aut laborum, architecto illo placeat veritatis aspernatur modi
+          similique aperiam sunt velit pariatur, accusantium, a at illum optio
+          totam.
+        </p>
+        <h3 class="formatting">shotguns</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          pariatur, ab quaerat alias repellendus delectus excepturi voluptate
+          odio asperiores aspernatur minus commodi nisi, incidunt maiores?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dignissimos ipsum est voluptates minus mollitia!
+        </p>
+        <h3 class="formatting">bolt action</h3>
+        <h3 class="formatting">pump action</h3>
+        <h3 class="formatting">self defense</h3>
+        <h3 class="formatting">over & under</h3>
+        <h3 class="formatting">semi-auto</h3>
+        <h3 class="formatting">sporting</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ab
+          quibusdam! Sit alias sequi error labore ullam numquam officia dolores
+          explicabo itaque mollitia iste, veniam provident perspiciatis quaerat
+          earum at soluta assumenda aspernatur facilis aliquam. Cumque
+          reprehenderit omnis commodi possimus, iure dolorem magni assumenda
+          soluta.
+        </p>
+      </div>
+    </section>
+    <!-- guns details section ends -->
 
-        <!-- frequently asked question section starts -->
-        <section class="faqs-section">
-          <h2 class="aboutperson center-text">frequently asked questions</h2>
-          <p class="center-text">there are many variation of passage of lorem ipsum that available, but the majority have fered alteration in some form, by ejected humour.</p>
-          <div class="faqs-container">
-            <img src="assets/images/faqpics.png" alt="faqs-photos" class="faqsphoto">
-            <div class="accordion-container-inner">
-              <button class="accordion">faq 1</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">faq 2</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">faq 3</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">faq 4</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">faq 5</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">faq 6</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            </div>            
+    <!-- frequently asked question section starts -->
+    <section class="faqs-section">
+      <h2 class="aboutperson center-text">frequently asked questions</h2>
+      <p class="center-text">
+        there are many variation of passage of lorem ipsum that available, but
+        the majority have fered alteration in some form, by ejected humour.
+      </p>
+      <div class="faqs-container">
+        <img
+          src="assets/images/faqpics.png"
+          alt="faqs-photos"
+          class="faqsphoto"
+        />
+        <div class="accordion-container-inner">
+          <button class="accordion">faq 1</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-        </section>
-        <!-- frequently asked question section ends -->
-
-        <!-- footer section starts -->
-        <section class="footer-container">
-          <div class="information-section">
-            <div class="information-cards">
-              <i class="fa-solid fa-location-dot"></i>
-              <h3>LOCATION</h3>
-              <p>451 Wall Street UK, London</p>
-            </div>
-            <div class="information-cards">
-              <i class="fa-solid fa-phone"></i>
-              <h3>CONTACT</h3><br>
-              <a href="tel:0643321233">(064) 332-1233</a>
-            </div>
-            <div class="information-cards">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:admin@gmail.com"><h3>admin@gmail.com</h3></a>
-            </div>
+          <button class="accordion">faq 2</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-          <div class="footer-container-inner">
-            <div class="aboutus-area">
-              <h3>about us</h3>
-              <p class="about-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis culpa accusantium numquam ab non debitis quae impedit! Accusamus, omnis debitis?</p>
-            </div>
-            <div class="contactus-area">
-              <h3>contact us</h3>
-              <ul>
-                <li>451 Wall Street</li>
-                <li>UK, London</li><br>
-                <li>(064) 332-1233</li>
-                <li>Fax: (099) 453-1357</li>
-              </ul>
-            </div>
-            <div class="quick-links-area">
-              <h3>quick links</h3>
-              <ul>
-                <a href="#"><li class="listspace">our services</li></a>
-                <a href="#"><li class="listspace">our company</li></a>
-                <a href="#"><li class="listspace">vision & mission</li></a>
-                <a href="#"><li class="listspace">product</li></a>
-                <a href="#"><li class="listspace">our faljami</li></a>
-              </ul>
-            </div>
-            <div class="newsletter-area">
-              <h3>newsletter</h3>
-              <p class="newsletter-text">there are many variations of reavailable but the majority</p>
-              <input type="email" name="newsletter-email" maxlength="50" class="newsletter_input"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-              <div class="social-links">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </div>
+          <button class="accordion">faq 3</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-        </section>
-        <!-- footer section ends -->
+          <button class="accordion">faq 4</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button class="accordion">faq 5</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button class="accordion">faq 6</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- frequently asked question section ends -->
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
-  <script src="assets/js/app.js"></script>
-</body>
+    <!-- footer section starts -->
+    <section class="footer-container">
+      <div class="information-section">
+        <div class="information-cards">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>LOCATION</h3>
+          <p>451 Wall Street UK, London</p>
+        </div>
+        <div class="information-cards">
+          <i class="fa-solid fa-phone"></i>
+          <h3>CONTACT</h3>
+          <br />
+          <a href="tel:0643321233">(064) 332-1233</a>
+        </div>
+        <div class="information-cards">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:admin@gmail.com"><h3>admin@gmail.com</h3></a>
+        </div>
+      </div>
+      <div class="footer-container-inner">
+        <div class="aboutus-area">
+          <h3>about us</h3>
+          <p class="about-footer">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+            culpa accusantium numquam ab non debitis quae impedit! Accusamus,
+            omnis debitis?
+          </p>
+        </div>
+        <div class="contactus-area">
+          <h3>contact us</h3>
+          <ul>
+            <li>451 Wall Street</li>
+            <li>UK, London</li>
+            <br />
+            <li>(064) 332-1233</li>
+            <li>Fax: (099) 453-1357</li>
+          </ul>
+        </div>
+        <div class="quick-links-area">
+          <h3>quick links</h3>
+          <ul>
+            <a href="#"><li class="listspace">our services</li></a>
+            <a href="#"><li class="listspace">our company</li></a>
+            <a href="#"><li class="listspace">vision & mission</li></a>
+            <a href="#"><li class="listspace">product</li></a>
+            <a href="#"><li class="listspace">our faljami</li></a>
+          </ul>
+        </div>
+        <div class="newsletter-area">
+          <h3>newsletter</h3>
+          <p class="newsletter-text">
+            there are many variations of reavailable but the majority
+          </p>
+          <input
+            type="email"
+            name="newsletter-email"
+            maxlength="50"
+            class="newsletter_input"
+          /><i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section ends -->
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
