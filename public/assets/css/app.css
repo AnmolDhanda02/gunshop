@@ -219,6 +219,18 @@ a {
   display: inline;
 }
 
+.product-description .breadcrumb li a {
+  color: black;
+}
+
+.product-description .breadcrumb li {
+  color: grey;
+}
+
+.product-description .breadcrumb {
+  padding: 0 180px;
+}
+
 .weapons-photo {
   background-image: url("/assets/images/gunsimages/header.jpeg");
   background-repeat: no-repeat;
@@ -251,6 +263,7 @@ a {
   text-transform: uppercase;
 }
 
+.product-description .shopnowbtn:hover,
 .category-cards .gunshopbtn:hover,
 .shopnowbtn:hover,
 .shopnow:hover {
@@ -668,9 +681,9 @@ a {
 
 .center-text {
   text-align: center;
-  color: var(--background-color);
+  /* color: var(--background-color);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold; */
 }
 
 .weapons-section .center-text {
@@ -897,8 +910,19 @@ a {
 
 .gunslicensingsection p {
   text-align: justify;
-  line-height: 1.5;
-  margin: 15px 0;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.inline-block {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.inline-block + span {
+  color: grey;
+  padding: 0 15px;
+  text-transform: uppercase;
 }
 
 .formatting {
@@ -1111,6 +1135,10 @@ a {
   top: 33px;
 }
 
+/* .information-cards h3:last-child::after {
+  display: none;
+} */
+
 .blogpostupdatedcontainer {
   background-color: var(--background-color);
   color: var(--whitecolor);
@@ -1130,7 +1158,7 @@ a {
   grid-gap: 30px;
   place-items: center;
   background-color: #1d1e23;
-  padding: 45px 107px;
+  padding: 45px 153px;
 }
 
 .featuredproductscontainer h2,
@@ -1152,6 +1180,9 @@ a {
 .featuredphotos {
   height: 50px;
   width: 50px;
+  background-color: #ffffff;
+  padding: 8px;
+  margin: 0 15px 0 0;
 }
 
 .latestproductscards {
@@ -1161,6 +1192,7 @@ a {
 .latestproductscards h2 {
   text-transform: uppercase;
   font-weight: bold;
+  font-style: italic;
   padding: 10px 0;
 }
 
@@ -1172,6 +1204,15 @@ a {
   color: #8f6122;
 }
 
+.relatedproducts .ratings .checkedicon {
+  color: #fcc575;
+}
+
+.relatedproducts .ratings {
+  display: inline;
+  position: static;
+}
+
 .ratings {
   position: relative;
   left: 53px;
@@ -1179,12 +1220,16 @@ a {
 }
 
 .featuredproductscontainer .amount {
-  display: inline;
   position: relative;
-  left: -53px;
-  top: 27px;
+  left: 68px;
+  top: 6px;
 }
 
+.featuredproductscontainer .revieweduser {
+  position: relative;
+  left: 68px;
+  top: 6px;
+}
 .inputfield {
   display: block;
   border: 1px solid var(--background-color);
@@ -1229,7 +1274,9 @@ a {
   margin: auto;
 }
 
-.contactussection {
+.contactussection,
+.relatedproducts,
+.product-description {
   padding: 30px 0px;
   background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
   background-repeat: no-repeat;
@@ -1238,4 +1285,85 @@ a {
   background-attachment: fixed;
   margin: -21px 0;
   overflow: hidden;
+}
+
+.contactsdetailsinner a {
+  color: var(--background-color);
+  font-weight: bold;
+}
+
+.productdetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-items: center;
+  padding: 50px;
+}
+
+.productamount {
+  outline: none;
+  border: none;
+  width: 5em;
+  height: 2.5em;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.product-description .shopnowbtn {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  border: none;
+  font-weight: bolder;
+  padding: 15px 23px;
+  margin: 50px 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.productname {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.productdescription {
+  line-height: 1.5;
+}
+
+.productdetailsinner h3 {
+  margin: 20px 0;
+}
+
+.productdescription ~ p {
+  margin: 10px 0;
+}
+
+.relatedproducts .aboutperson {
+  color: black;
+  font-style: italic;
+}
+
+.relatedproductcards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+  place-items: center;
+  margin: 50px 161px;
+}
+
+.relatedproductcards-cardsbody {
+  background-color: #fefefe;
+  border: 1px solid #f6f6f6;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.relatedproductcards-cardsbody .productphoto {
+  height: 10em;
+  width: 10em;
 }
