@@ -1184,3 +1184,58 @@ a {
   left: -53px;
   top: 27px;
 }
+
+.inputfield {
+  display: block;
+  border: 1px solid var(--background-color);
+  outline: none;
+  padding: 10px;
+  width: 40vw;
+  margin: 5px 0;
+}
+
+.contactsdetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 0px;
+}
+
+.formbtn {
+  background-color: var(--background-color);
+  color: var(--whitecolor);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.formbtn:hover {
+  color: var(--background-color);
+  background-color: var(--whitecolor);
+}
+
+.location {
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.mapslocation {
+  width: 98vw;
+  height: 80vh;
+  display: block;
+  margin: auto;
+}
+
+.contactussection {
+  padding: 30px 0px;
+  background-image: url("/assets/images/gunsimages/entirebgphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: -21px 0;
+  overflow: hidden;
+}
