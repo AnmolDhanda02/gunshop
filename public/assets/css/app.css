@@ -223,6 +223,8 @@ a {
   color: black;
 }
 
+.categorieslist ul li,
+.sidebar-content h2 span,
 .product-description .breadcrumb li {
   color: grey;
 }
@@ -260,9 +262,11 @@ a {
   padding: 13px;
   margin: 50px 0px;
   font-size: 21px;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
+.subtotalcontainer ~ .shopnowbtn:hover,
 .product-description .shopnowbtn:hover,
 .category-cards .gunshopbtn:hover,
 .shopnowbtn:hover,
@@ -276,6 +280,7 @@ a {
   background: var(--background-color);
   color: var(--whitecolor);
   border: none;
+  cursor: pointer;
   font-weight: bolder;
   padding: 13px;
   font-size: 21px;
@@ -662,6 +667,7 @@ a {
 
 .entire-area .shopnowbtn {
   margin: 8px 0px 0px 0px;
+  cursor: pointer;
 }
 
 .guns-points {
@@ -780,9 +786,8 @@ a {
 }
 
 .gunsbrandslogos {
-  height: 100px;
-  width: 100px;
-  display: block;
+  height: 3em;
+  width: 5em;
 }
 
 .gunsbrandscontainer {
@@ -796,10 +801,11 @@ a {
 
 .gunsbrandscards {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(1, 1fr);
   place-items: center;
-  padding: 20px 210px;
+  padding: 20px 122px;
+  grid-gap: 30px;
 }
 
 .freeshipping {
@@ -825,6 +831,7 @@ a {
   margin: 50px auto;
   display: block;
   padding: 10px 20px;
+  cursor: pointer;
   font-size: 18px;
 }
 
@@ -965,6 +972,7 @@ a {
   font-weight: bolder;
   padding: 10px;
   margin: 10px auto;
+  cursor: pointer;
   font-size: 18px;
   position: relative;
   left: 182px;
@@ -1189,6 +1197,7 @@ a {
   padding: 10px 10px 50px 10px;
 }
 
+.sidebar-content h2,
 .latestproductscards h2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -1208,7 +1217,8 @@ a {
   color: #fcc575;
 }
 
-.relatedproducts .ratings {
+.relatedproducts .ratings,
+.maincardscontainer-cardsbody .ratings {
   display: inline;
   position: static;
 }
@@ -1275,6 +1285,9 @@ a {
 }
 
 .contactussection,
+.ourproducts-section,
+.howtoordersection,
+.ourproductssection,
 .relatedproducts,
 .product-description {
   padding: 30px 0px;
@@ -1297,7 +1310,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   place-items: center;
-  padding: 50px;
+  padding: 50px 0;
+}
+
+.howtoordersection .productdetailsinner {
+  background: black;
+  color: white;
+  padding: 100px 150px 5px 20px;
 }
 
 .productamount {
@@ -1334,8 +1353,9 @@ a {
   line-height: 1.5;
 }
 
-.productdetailsinner h3 {
+.howtoordersection .productdetailsinner .aboutperson {
   margin: 20px 0;
+  color: var(--whitecolor);
 }
 
 .productdescription ~ p {
@@ -1356,7 +1376,16 @@ a {
   margin: 50px 161px;
 }
 
-.relatedproductcards-cardsbody {
+.maincardscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-items: center;
+  grid-gap: 15px;
+}
+
+.relatedproductcards-cardsbody,
+.maincardscontainer-cardsbody {
   background-color: #fefefe;
   border: 1px solid #f6f6f6;
   padding: 30px 10px;
@@ -1366,4 +1395,94 @@ a {
 .relatedproductcards-cardsbody .productphoto {
   height: 10em;
   width: 10em;
+}
+
+.howtoordersection .productdetailsinner p {
+  margin: 15px 0;
+}
+
+.ourproductssectioninner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-items: center;
+  margin: 0 164px;
+  grid-gap: 20px;
+}
+
+/* .sidebar {
+  height: 100vh;
+} */
+
+.sidebar .sidebar-content {
+  background-color: #121116;
+  color: var(--whitecolor);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* height: 100vh; */
+  position: relative;
+  top: -170px;
+  width: 20vw;
+}
+
+.sidebar-content .divider-space {
+  margin: 15px 0;
+}
+
+.subtotalcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.subtotalcontainer ~ .shopnowbtn {
+  background: var(--background-color);
+  color: var(--whitecolor);
+  border: none;
+  font-weight: bolder;
+  padding: 13px 24px;
+  margin: 5px auto;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sidebar-content > p {
+  color: grey;
+}
+
+.ourproducts-section h2 {
+  margin: 0 0 30px;
+}
+
+.redcross {
+  color: crimson;
+  font-weight: bold;
+}
+
+.sidebar .sidebarcategories-container {
+  margin: 50px 0 0;
+}
+
+.sidebarcategories-container .categorieslist {
+  padding: 0 30px;
+  list-style-type: square;
+}
+
+.categorieslist ul {
+  padding: 0 20px;
+  list-style-type: square;
+}
+
+.list-items {
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.pricefilterrange {
+  width: 19em;
 }
